@@ -19,10 +19,21 @@ public class Code4Life {
 	 */
 	String x=JOptionPane.showInputDialog(null,"How many hour have you coded this week?");
 	int y=Integer.parseInt(x);
-	if (y>3){
-		
-	}
+	if (y>5){
 		playBatmanTheme();
+	}
+	else if (y>3){
+	System.out.println("You are a Code Ninja");	
+	}
+	else if(y>1 & y<4){
+	System.out.println("nice coding!");	
+	}
+	else if(y<2){
+		System.out.println("stop watching YouTube and write code instead");
+	}
+	else{
+		System.out.println("Errrror");
+	}
 	}
 
 
